@@ -1,4 +1,4 @@
-from schemas import Item, Receipt
+from app.schemas import Item, Receipt
 import math
 from datetime import datetime, time
 from typing import Union
@@ -86,7 +86,7 @@ class Rules:
         if start_time < t < end_time:
             points =  pointsPer
         
-        print(f"{points} points - {t.strftime("%I:%M %p")} is between {start_time.strftime("%I:%M %p")} and {end_time.strftime("%I:%M %p")}")
+        print(f"{points} points - {t.strftime('%I:%M %p')} is between {start_time.strftime('%I:%M %p')} and {end_time.strftime('%I:%M %p')}")
         return points
         
         

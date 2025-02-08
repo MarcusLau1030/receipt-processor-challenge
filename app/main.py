@@ -1,9 +1,9 @@
 from typing import Union
 
 from fastapi import FastAPI, HTTPException
-from schemas import Item, Receipt
-from rules import Rules
-from responses import Responses
+from app.schemas import Item, Receipt
+from app.rules import Rules
+from app.responses import Responses
 
 app = FastAPI()
 
